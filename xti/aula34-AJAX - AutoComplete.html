@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery XTI</title>
+		
+    <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+		<script type="text/javascript" src="js/aula/10.js"></script>
+
+        <link href="js/ui/jquery-ui.css" rel="stylesheet">
+        <script type="text/javascript" src="js/ui/external/jquery/jquery.js"></script>
+        <script type="text/javascript" src="js/ui/jquery-ui.js"></script>
+
+        <script type="text/javascript">
+        //Iniciar a Jquery
+        //pode inicializar usando o document.ready
+          $(function(){
+              
+            //atribui o DatePicker para o componente de id date
+            $("#date").datepicker();
+
+
+             var dados = [
+                "Brasil",
+                "Brasilandia",
+                "Brabar",
+                "Paris",
+                "Portugual"
+              ];
+              
+            //Atribui o AutoComplete para o tags
+            $("#tags").autocomplete({
+              
+             
+
+              //Informa o source onde contém os valores para serem comparados com o escrito e autocompletadas
+              //Pode ser um array java script
+              
+              source: dados
+
+            });
+
+          });
+
+        </script>
+
+</head>
+<body>
+ 
+ 
+Date: <input type="text" id="date" /> <br> <br> 
+
+<div>
+  <label for="tags">Tags:</label>
+  <input type="text" id="tags" />
+</div>
+
+
+</body>
+</html> 
